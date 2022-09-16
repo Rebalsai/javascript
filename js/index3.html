@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <h1>HELLO</h1>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+        <p id="demo8"></p>
+        <p id="demo9"></p>
+        <p id="demo10"></p>
+        <p id="demo11"></p>
+        <p id="demo12"></p>
+        <p id="demo13"></p>
+       <script src="java3.js"></script></br>
+    <body>
+    <body>
+        <input id="val1"/>
+        <input id="val2"/>
+        <select name="" id="">
+            <option value="">hi</option>
+            <option>hello</option>
+        </select>
+        <script>
+            let object = { FirstName:"sai",Age:22,Skill:"FullStak"}
+            document.getElementById("demo").innerHTML=Object.values(object);
+        </script>
+        <script>
+            let Array = ['red','blue','green']
+            document.getElementById("demo1").innerHTML=Array;
+        </script>
+
+        <!-- String Methods -->
+        
+        <script>
+              let x = "welcome";
+              let result = (x.charAt(3));
+              document.getElementById("demo2").innerHTML=result;
+        </script>
+        <script>
+            let y = "Ziraff";
+            let result1 = (y.toUpperCase());
+            document.getElementById("demo3").innerHTML=result1; 
+        </script>
+        <script>
+            let a = "   hello    ";
+            let c = (a.trim());
+            document.getElementById("demo4").innerHTML=c;
+        </script>
+        <script>
+            let text = "yellow";
+            let text1 = " block";
+            let total = text.concat(text1);
+            document.getElementById("demo5").innerHTML=total;
+        </script>
+        <script>
+            function App(){
+            let con = document.getElementById("val1").value;
+            let cat = document.getElementById("val2").value;
+            let concat1 = (con.concat(cat));
+           // let sum = parseInt(con)+parseInt(cat);
+             document.getElementById("demo6").innerHTML=concat1;
+            }
+        </script>
+        <button onclick="App()">concat</button></br>
+
+        <!-- Date Methods -->
+           
+        <script>
+            const date = new Date();
+            const day = date.getDay();
+            const month = date.getMonth()+1;
+            const year = date.getFullYear();
+            document.write(day+"/"+month+"/"+year)
+        </script></br>
+        <script>
+            const time = new Date();
+            const h = time.getHours();
+            const m = time.getMinutes();
+            const s = time.getSeconds();
+            const mi = time.getMilliseconds();
+            document.write(h+":"+m+":"+s+":"+mi)
+        </script>
+
+        <!-- Array methods -->
+        <script>
+            let array = [2,3,4]
+            let ma = array.map(item=>item*2)
+            document.getElementById("demo7").innerHTML=ma;
+        </script>
+        <script>
+            let Ages = [18,20,19]
+        document.getElementById("demo8").innerHTML=Ages.find(App);
+        function App(age){
+             return   age>18
+        }
+        </script>
+        <script>
+            let fruits = ["banana","Apple","grapes"]
+            // fruits.unshift("kiwi");
+            fruits[1]="kiwi"
+            document.getElementById("demo9").innerHTML=fruits;
+        </script>
+
+        <!-- function -->
+         <script>
+             function normal (p1,p2){
+            return p1*p2
+        }
+        document.getElementById("demo10").innerHTML=normal(8,8)
+         </script>
+         <script>
+            let arrow = (a,b)=>a*b;
+         document.getElementById("demo11").innerHTML=arrow(9,9)
+         </script>
+         <script>
+            let anony = App(10,2) 
+            document.getElementById("demo12").innerHTML=anony;
+            function App(a,b){
+                return a/b
+            }
+         </script>
+
+         <script>
+            for(i=2;i<=20;i++){
+
+                for(j=2;j<i;j++){
+
+                    if(i%j==0){
+
+                        break;
+                    }
+                }
+                if(i==j){
+
+                    document.write(i+"<br>")
+                }
+            }
+         </script>
+    </body>
+</html>

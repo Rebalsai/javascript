@@ -1,0 +1,227 @@
+<html>
+    <head>
+        <h1>String Methods</h1>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+Box1:<input id="val1"></br>
+Box2:<input id="val2"></br>
+Box3:<input id="val3"></br>
+
+    </head>
+    <body>
+        <script>
+            function App(){
+            let text = document.getElementById("val1").value;
+            let text1 = document.getElementById("val2").value;
+            let text2 = document.getElementById("val3").value;
+            let result = (text.concat(text1,text2));
+            document.getElementById("demo").innerHTML=result
+            }
+        </script>
+       
+        <script>
+            function App1(){
+            let text = document.getElementById("val1").value;
+            let text1 = document.getElementById("val2").value;
+            let text2 = document.getElementById("val3").value;
+            let result = (text.concat(text1,text2));
+            let result1 =(result.toUpperCase());
+            document.getElementById("demo").innerHTML=result1;
+            }
+        </script>
+       
+        <script>
+            function App2(){
+            let text = document.getElementById("val1").value;
+            let text1 = document.getElementById("val2").value;
+            let text2 = document.getElementById("val3").value;
+            let result = (text.concat(text1,text2));
+            let result2 =(result.toLowerCase());
+            document.getElementById("demo").innerHTML=result2;
+            }
+        </script>
+      
+        <script>
+            function App3(){
+            let text = document.getElementById("val1").value;
+            let text1 = document.getElementById("val2").value;
+            let text2 = document.getElementById("val3").value;
+            // let result1 = (text.concat(text1,text2));
+            let result3 =(text.trim())
+            let result4 =(text1.trim());
+            let result5 =(text2.trim())
+            let bind = result3+result4+result5;
+            document.getElementById("demo").innerHTML=bind;
+            }
+        </script>
+        
+        <script>
+            function App4(){
+            let text = document.getElementById("val1").value;
+            let text1 = document.getElementById("val2").value;
+            let text2 = document.getElementById("val3").value;
+            let text1position = text.indexOf(text1);
+            let text2position = text.indexOf(text2);
+            let result4 =(text.slice(text1position));
+            document.getElementById("demo").innerHTML=result4;
+            }
+        </script>
+      
+        <script>
+            function App5(){
+            let text = document.getElementById("val1").value;
+            let text1 = document.getElementById("val2").value;
+            let text2 = document.getElementById("val3").value;
+            let result4 =(text.split(text1));
+            document.getElementById("demo").innerHTML=result4;
+            }
+        </script>
+      
+        <script>
+            function App6(){
+            let text = document.getElementById("val1").value;
+            let text1 = document.getElementById("val2").value;
+            let text2 = document.getElementById("val3").value;
+            let result2 = (text.concat(text1,text2));
+            let result5 =(result2.length);
+            document.getElementById("demo").innerHTML=result5;
+            }
+        </script>
+       
+        <script>
+            function App7(){
+            let text = document.getElementById("val1").value;
+            let text1 = document.getElementById("val2").value;
+            let text2 = document.getElementById("val3").value;
+            // let result3 = (text.concat(text1,text2));
+            let result5 =(text.repeat(text1));
+            document.getElementById("demo").innerHTML=result5;
+            }
+        </script>
+        
+        <script>
+            function App8(){
+            let text = document.getElementById("val1").value;
+            let text1 = document.getElementById("val2").value;
+            let text2 = document.getElementById("val3").value;
+            //  let result3 = (text.concat(text1));
+            let result5 =(text.replace(text1,text2));
+            document.getElementById("demo").innerHTML=result5;
+            }
+        </script>
+       
+        <script>
+            function App9(){
+            let text = document.getElementById("val1").value;
+            let text1 = document.getElementById("val2").value;
+           // let text2 = document.getElementById("val3").value;
+            // let result3 = (text.concat(text1,text2));
+            let result5 =(text.charAt(text1));
+            document.getElementById("demo").innerHTML=result5;
+            }
+        </script>
+    
+        <script>
+            function App15(){
+            let text = document.getElementById("val1").value;
+            let text1 = document.getElementById("val2").value;
+            // let text2 = document.getElementById("val3").value;
+            // let result3 = (text.concat(text1,text2));
+            let result5 =(text.indexOf(text1));
+            document.getElementById("demo").innerHTML=result5;
+            }
+        </script>
+    
+        <script>
+            function App10(){
+            let text = document.getElementById("val1").value;
+            let text1 = document.getElementById("val2").value;
+            // let text2 = document.getElementById("val3").value;
+            // let result3 = (text.concat(text1,text2));
+            let result5 =(text.lastIndexOf(text1));
+            document.getElementById("demo").innerHTML=result5;
+            }
+        </script>
+        
+        <script>
+            function App12(){
+            let text = document.getElementById("val1").value;
+            let text1 = document.getElementById("val2").value;
+            // let text2 = document.getElementById("val3").value;
+            // let result3 = (text.concat(text1,text2));
+            let result5 =(text.startsWith(text1));
+            document.getElementById("demo").innerHTML=result5;
+            }
+        </script>
+       
+        <script>
+            function App11(){
+            let text = document.getElementById("val1").value;
+            let text1 = document.getElementById("val2").value;
+            // let text2 = document.getElementById("val3").value;
+            // let result3 = (text.concat(text1,text2));
+            let result5 =(text.endsWith(text1));
+            document.getElementById("demo").innerHTML=result5;
+            }
+        </script>
+
+<script>
+    function App16(){
+    let text = document.getElementById("val1").value;
+    let text1 = document.getElementById("val2").value;
+     let text2 = document.getElementById("val3").value;
+     let text1position = text.indexOf(text1);
+     let text2position = text.indexOf(text2);
+    // let result3 = (text.concat(text1,text2));
+    let result5 =(text.substr(text1position,text2position));
+    document.getElementById("demo").innerHTML=result5;
+    }
+</script>
+
+<script>
+    function App13(){
+    let text = document.getElementById("val1").value;
+    let text1 = document.getElementById("val2").value;
+     let text2 = document.getElementById("val3").value;
+     let text1position = text.indexOf(text1);
+     let text2position = text.indexOf(text2);
+    // let result3 = (text.concat(text1,text2));
+    let result5 =(text.substring(text1position,text2position));
+    document.getElementById("demo").innerHTML=result5;
+    }
+</script>
+
+<script>
+function App14(){
+    let text = document.getElementById("val1").value;
+    let text1 = document.getElementById("val2").value;
+    // let text2 = document.getElementById("val3").value;
+    // let result3 = (text.concat(text1,text2));
+    let result5 =(text.match(text1));
+    document.getElementById("demo").innerHTML=result5;
+    }
+</script>
+  
+        
+   
+       
+        <button onclick="App()">concat</button>
+        <button onclick="App1()">toUpperCase</button>
+        <button onclick="App2()">toLowerCase</button>
+        <button onclick="App9()">CharAt</button><br/>
+        <button onclick="App15()">IndexOf</button>
+        <button onclick="App10()">lastIndexOf</button>
+        <button onclick="App12()">startsWith</button>
+        <button onclick="App11()">endsWith</button></br>
+        <button onclick="App6()">length</button>
+        <button onclick="App5()">split</button>
+        <button onclick="App4()">slice</button>
+        <button onclick="App7()">repeate</button>
+        <button onclick="App8()">replace</button>
+        <button onclick="App14()">match</button></br>
+        <button onclick="App16()">subStr</button>
+        <button onclick="App13()">substring</button>
+        <button onclick="App3()">trim</button>
+       
+    </body>
+</html>

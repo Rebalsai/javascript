@@ -1,0 +1,144 @@
+<html>
+    <head>
+       <p id="demo"></p>
+       <p id="demo1"></p>
+       <p id="demo2"></p>
+       <p id="demo3"></p>
+       <p id="demo4"></p>
+       <input id="val1"/>
+       <input id="val2"/>
+       
+    </head>
+    <body>
+        <script>
+            // array 
+            let length = {FN:"sai",Age:22}
+            document.getElementById("demo").innerHTML=Object.values(length);
+        </script>
+        <script>
+                 //object
+                 let color = ['red','blue','green']
+            document.getElementById("demo1").innerHTML=color;
+        </script>
+
+        <!-- string methods -->
+        <script>
+            function concat(){
+            let x = document.getElementById("val1").value;
+            let y = document.getElementById("val2").value;
+            let result =( x.concat(y));
+            document.getElementById("demo2").innerHTML=result;
+            // document.getElementById("demo2").innerHTML=x.split("l");
+            }
+        </script>
+        <button onclick="concat()">concat</button>
+     <!-- <script>
+           let x = "hello";
+           document.write(x.split("l"))
+     </script> -->
+           
+
+     <!-- array methods -->
+         
+     <!-- <script>
+                 const d = [2,3,4]
+                 let result = d.map(item=>item*2)
+                 document.getElementById("demo3").innerHTML=result
+     </script> -->
+     <script>
+        // let ages = [19,18,20]
+        // document.getElementById("demo3").innerHTML=ages.find(App);
+        // function App(age){
+        //     return age>18
+        // }
+        let d=[19,4,5]
+        document.getElementById("demo3").innerHTML=d.reduce(App)
+        function App(total,num){
+            return total-num
+        }
+     </script><br/>
+
+     <!-- date methods -->
+     <script>
+        const date = new Date();
+        const day =date.getDay();
+        const month =date.getMonth()+1;
+        const year =date.getFullYear();
+        document.write(day+"/"+month+"/"+year)
+     </script></br>
+     <script>
+        const time = new Date();
+        const h = time.getHours();
+        const t = time.getMinutes();
+        const s = time.getSeconds();
+        document.write(h+":"+t+":"+s)
+     </script></br>
+          <script src="java3.js">  </script>
+
+          <!-- anonymouse function -->
+          <!-- <script>
+            const demo = App(3,4)
+            document.getElementById("demo4").innerHTML=demo;
+            function App(a,b){
+                return a+b
+            }
+          </script> -->
+
+          <script>
+            function App(callback){
+                document.write("hello");
+                callback();
+
+            }
+            App(document.write("welcome"))
+          </script>
+
+<!-- events -->
+          <input id ="input" onfocus="app()"/>
+          <input type="text" onkeypress="onkey()"/>
+          <input type="text" onchange="fun()"/>
+          <!-- <input type="text" onmouseover="onmouse()" /> -->
+          <p id="on" onmouseover="onmouse()" >hello ziraff</p>
+          <script>
+             function app(){
+            document.getElementById("input").style.background ="red"
+           }
+          </script>
+          <script>
+            function onkey(){
+            //   document.getElementById("input1").value;
+            alert("onkeyup is there");
+            }
+          </script>
+          <script>
+            function fun(){
+                     alert("something change");
+            }
+          </script>
+
+          <script>
+            function onmouse(){
+               document.getElementById("on").style.background="green"
+            }
+          </script>
+             
+         <!-- number: <input name="input" onBlur="blur"/> -->
+     
+
+
+         <!-- <script>
+          for(i=2;i<=20;i++){
+            for(j=2;j<i;j++){
+              if(i%j==0){
+                break;
+              }
+              if(i==j){
+                document.write(i)
+              }
+            }
+          } -->
+
+
+         </script>
+    </body>
+</html>
